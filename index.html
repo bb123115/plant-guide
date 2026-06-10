@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>観葉植物ガイド｜相場・サイズ・育て方を調べるサイト</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>観葉植物ガイド</h1>
+    <p>観葉植物の相場・サイズ・育て方を調べられる検索サイトです。</p>
+  </header>
+
+  <main>
+    <section class="search-area">
+      <h2>観葉植物を探す</h2>
+
+      <div class="search-controls">
+        <input type="text" id="searchInput" placeholder="植物名で検索 例：モンステラ">
+
+        <select id="difficultyFilter">
+          <option value="">育てやすさを選択</option>
+          <option value="簡単">簡単</option>
+          <option value="普通">普通</option>
+        </select>
+
+        <select id="priceFilter">
+          <option value="">価格帯を選択</option>
+          <option value="安い">安い</option>
+          <option value="中">中</option>
+        </select>
+
+        <button id="resetButton">リセット</button>
+      </div>
+
+      <p id="resultCount"></p>
+    </section>
+
+    <section>
+      <h2>植物一覧</h2>
+      <div id="plantList" class="plant-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 観葉植物ガイド</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

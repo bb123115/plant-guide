@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+  background-color: #f5f8f4;
+  color: #333;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #2f6b4f;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #2f6b4f;
+  border-left: 6px solid #2f6b4f;
+  padding-left: 10px;
+}
+
+h3 {
+  color: #3c7a5d;
+}
+
+div {
+  background-color: #f0f7f2;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #2f6b4f;
+  color: white;
+  padding: 20px;
+}
+
+.search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-controls input,
+.search-controls select,
+.search-controls button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #b8c8b8;
+  border-radius: 8px;
+}
+
+.search-controls input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.search-controls button {
+  background-color: #2f6b4f;
+  color: white;
+  cursor: pointer;
+}
+
+.plant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.plant-card {
+  background-color: #f0f7f2;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #d5e5d7;
+}
+
+.plant-card h3 {
+  margin-top: 0;
+  color: #2f6b4f;
+}
