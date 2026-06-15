@@ -10,21 +10,25 @@
 "watering": "土の表面が乾いたら水をあげる",
 "originRegion": "中南米",
 "originText": "熱帯アメリカ",
+"image": "images/monstera.png/monstera.png",
 "originLocations": [
 {
 "name": "メキシコ",
 "lat": 23.6345,
-"lng": -102.5528
+"lng": -102.5528,
+"countryCode":"MEX"
 },
 {
 "name": "パナマ",
 "lat": 8.538,
-"lng": -80.7821
+"lng": -80.7821,
+"countryCode":"PAN"
 },
 {
 "name": "コロンビア",
 "lat": 4.5709,
-"lng": -74.2973
+"lng": -74.2973,
+"countryCode":"COL"
 }
 ],
 "description": "大きな切れ込みのある葉が特徴の人気の観葉植物です。部屋の雰囲気をおしゃれに見せたい人に向いています。"
@@ -40,11 +44,13 @@
 "watering": "土が乾いてから水をあげる",
 "originRegion": "オセアニア",
 "originText": "ソロモン諸島",
+"image": "images/pothos.png/pothos.png",
 "originLocations": [
 {
 "name": "ソロモン諸島",
 "lat": -9.6457,
-"lng": 160.1562
+"lng": 160.1562,
+"countryCode":"SLB"
 }
 ],
 "description": "初心者でも育てやすく、室内でも管理しやすい観葉植物です。つるが伸びるため、棚やハンギングにも向いています。"
@@ -60,21 +66,25 @@
 "watering": "乾燥気味に管理する",
 "originRegion": "アフリカ",
 "originText": "熱帯アフリカや南アフリカなどの乾燥地",
+"image": "images/sansevieria.png/sansevieria.png",
 "originLocations": [
 {
 "name": "ナイジェリア",
 "lat": 9.082,
-"lng": 8.6753
+"lng": 8.6753,
+"countryCode":"NGA"
 },
 {
 "name": "コンゴ民主共和国",
 "lat": -4.0383,
-"lng": 21.7587
+"lng": 21.7587,
+"countryCode":"COD"
 },
 {
 "name": "タンザニア",
 "lat": -6.369,
-"lng": 34.8888
+"lng": 34.8888,
+"countryCode":"TZA"
 }
 ],
 "description": "乾燥に強く、水やりの回数が少なくても育てやすい植物です。忙しい人にも向いています。"
@@ -90,21 +100,25 @@
 "watering": "土が乾いてからたっぷり水をあげる",
 "originRegion": "中南米",
 "originText": "中南米の熱帯地域",
+"image": "images/pachira.png/pachira.png",
 "originLocations": [
 {
 "name": "メキシコ南部",
 "lat": 17.0732,
-"lng": -96.7266
+"lng": -96.7266,
+"countryCode":"MEX"
 },
 {
 "name": "コスタリカ",
 "lat": 9.7489,
-"lng": -83.7534
+"lng": -83.7534,
+"countryCode":"CRI"
 },
 {
 "name": "コロンビア",
 "lat": 4.5709,
-"lng": -74.2973
+"lng": -74.2973,
+"countryCode":"COL"
 }
 ],
 "description": "丈夫で育てやすく、インテリアとしても人気があります。初心者の最初の一鉢にもおすすめです。"
@@ -123,31 +137,37 @@
 "watering": "土の表面が乾いたら水やり",
 "originRegion": "アジア・オセアニア",
 "originText": "東南アジア、台湾、沖縄、オーストラリア北部、ミクロネシアなど",
+"image": "images/gajumaru.png/gajumaru.png",
 "originLocations": [
 {
 "name": "沖縄",
 "lat": 26.2124,
-"lng": 127.6809
+"lng": 127.6809,
+"countryCode":"JPN"
 },
 {
 "name": "台湾",
 "lat": 23.6978,
-"lng": 120.9605
+"lng": 120.9605,
+"countryCode":"TWN"
 },
 {
 "name": "インドネシア",
 "lat": -0.7893,
-"lng": 113.9213
+"lng": 113.9213,
+"countryCode":"IDN"
 },
 {
 "name": "ミクロネシア",
 "lat": 7.4256,
-"lng": 150.5508
+"lng": 150.5508,
+"countryCode":"FSM"
 },
 {
 "name": "オーストラリア北部",
 "lat": -19.4914,
-"lng": 132.5509
+"lng": 132.5509,
+"countryCode":"AUS"
 }
 ],
 "description": "独特な幹の形が魅力の観葉植物です。沖縄では家庭繁栄の木ともされ、耐陰性や剪定への強さがあり、初心者にも育てやすいです。"
@@ -166,21 +186,25 @@
 "watering": "土の表面が乾ききる前に水やり",
 "originRegion": "中南米",
 "originText": "メキシコからペルー、カリブ海周辺",
+"image": "images/everfresh.png/エバーフラッシュ.png",
 "originLocations": [
 {
 "name": "メキシコ",
 "lat": 23.6345,
-"lng": -102.5528
+"lng": -102.5528,
+"countryCode":"MEX"
 },
 {
 "name": "ジャマイカ",
 "lat": 18.1096,
-"lng": -77.2975
+"lng": -77.2975,
+"countryCode":"JAM"
 },
 {
 "name": "ペルー",
 "lat": -9.19,
-"lng": -75.0152
+"lng": -75.0152,
+"countryCode":"PER"
 }
 ],
 "description": "夜になると葉を閉じる就眠運動を行う植物です。葉が細かく蒸散が多いため、水切れには注意が必要です。"
@@ -199,21 +223,25 @@
 "watering": "土の表面が乾いたらたっぷり水やり",
 "originRegion": "アフリカ",
 "originText": "熱帯アフリカ西部から中央部",
+"image": "images/umbellata.png/umbellata.png",
 "originLocations": [
 {
 "name": "ガーナ",
 "lat": 7.9465,
-"lng": -1.0232
+"lng": -1.0232,
+"countryCode":"GHA"
 },
 {
 "name": "カメルーン",
 "lat": 7.3697,
-"lng": 12.3547
+"lng": 12.3547,
+"countryCode":"CMR"
 },
 {
 "name": "コンゴ民主共和国",
 "lat": -4.0383,
-"lng": 21.7587
+"lng": 21.7587,
+"countryCode":"COD"
 }
 ],
 "description": "丸く大きな葉と白っぽい幹が特徴です。生育が旺盛で水をよく吸いますが、ハダニやアザミウマがつきやすい点に注意が必要です。"
@@ -232,16 +260,19 @@
 "watering": "乾燥気味に管理",
 "originRegion": "アフリカ",
 "originText": "南アフリカ、モザンビーク周辺",
+"image": "images/asparagus.png/アスパラガス.png",
 "originLocations": [
 {
 "name": "南アフリカ",
 "lat": -30.5595,
-"lng": 22.9375
+"lng": 22.9375,
+"countryCode":"ZAF"
 },
 {
 "name": "モザンビーク",
 "lat": -18.6657,
-"lng": 35.5296
+"lng": 35.5296,
+"countryCode":"MOZ"
 }
 ],
 "description": "細かく柔らかい葉のように見える部分が特徴です。寒さや乾燥に比較的強い種類が多く、根詰まりに注意が必要です。"
@@ -260,36 +291,43 @@
 "watering": "土の表面が乾き切る前に水やり",
 "originRegion": "アジア",
 "originText": "琉球諸島、台湾、中国南部、インド、東南アジアなど",
+"image": "images/kinkoumou.png/キンコウモウ.png",
 "originLocations": [
 {
 "name": "琉球諸島",
 "lat": 26.5,
-"lng": 127.9
+"lng": 127.9,
+"countryCode":"JPN"
 },
 {
 "name": "台湾",
 "lat": 23.6978,
-"lng": 120.9605
+"lng": 120.9605,
+"countryCode":"TWN"
 },
 {
 "name": "中国南部",
 "lat": 23.379,
-"lng": 113.7633
+"lng": 113.7633,
+"countryCode":"CHN"
 },
 {
 "name": "タイ",
 "lat": 15.87,
-"lng": 100.9925
+"lng": 100.9925,
+"countryCode":"THA"
 },
 {
 "name": "マレーシア",
 "lat": 4.2105,
-"lng": 101.9758
+"lng": 101.9758,
+"countryCode":"MYS"
 },
 {
 "name": "インド",
 "lat": 20.5937,
-"lng": 78.9629
+"lng": 78.9629,
+"countryCode":"IND"
 }
 ],
 "description": "金色に近い柔らかな毛に覆われるシダ植物です。水を好みますが、他のシダ植物と異なり日当たりも好みます。"
@@ -308,11 +346,13 @@
 "watering": "土の表面が乾いたら水やり",
 "originRegion": "南米",
 "originText": "ブラジル東部",
+"image": "images/cryptanthus.png/クリプタンサス.png",
 "originLocations": [
 {
 "name": "ブラジル東部",
 "lat": -12.9714,
-"lng": -38.5014
+"lng": -38.5014,
+"countryCode":"BRA"
 }
 ],
 "description": "別名アーススターとも呼ばれる植物です。葉の色や模様が美しく、根張りが弱く寒さに弱い点に注意が必要です。"
