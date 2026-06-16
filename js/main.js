@@ -121,7 +121,8 @@ function displayPlants(plantData) {
     const origin = plant.originText || plant.origin || "不明";
     const watering = plant.watering || plant.water || "不明";
     const priceLevel = plant.priceLevel || plant.priceCategory || "不明";
-    const instagramUrl = `https://www.instagram.com/explore/tags/${encodeURIComponent(plant.name)}/`;
+    const instagramKeyword = `${plant.name}　植物`;
+    const instagramUrl = `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(instagramKeyword)}`;
 
     card.innerHTML = `
       <img src="${plant.image}" alt="${plant.name}" class="plant-image">
