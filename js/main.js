@@ -121,6 +121,7 @@ function displayPlants(plantData) {
     const origin = plant.originText || plant.origin || "不明";
     const watering = plant.watering || plant.water || "不明";
     const priceLevel = plant.priceLevel || plant.priceCategory || "不明";
+    const instagramUrl = `https://www.instagram.com/explore/tags/${encodeURIComponent(plant.name)}/`;
 
     card.innerHTML = `
       <img src="${plant.image}" alt="${plant.name}" class="plant-image">
@@ -133,13 +134,30 @@ function displayPlants(plantData) {
       <p><strong>水やり：</strong>${watering}</p>
       <p><strong>原産地：</strong>${origin}</p>
       <p>${plant.description || ""}</p>
-      <button class="map-button">地図で見る</button>
+      <div class="button-area">
+       <a href="${instagramUrl}" target="_blank" rel="noopener noreferrer" class="instagram-button">
+        Instagramで検索する
+       </a>
+       
+       <button class="map-button">原産地を地図で見る</button>
+      </div>
     `;
 
     const mapButton = card.querySelector(".map-button");
 
     mapButton.addEventListener("click", () => {
+      const mapElement = document.getElementById("map");
+
+      mapElement.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
       showOriginsOnMap(plant);
+
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 500);
     });
 
     plantList.appendChild(card);

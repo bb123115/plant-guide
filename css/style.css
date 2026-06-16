@@ -62,29 +62,62 @@ footer {
 }
 
 .search-controls {
+  background-color: #eef7f0;
+  border-radius: 12px;
+  padding: 24px;
+
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .search-controls input,
-.search-controls select,
-.search-controls button {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #b8c8b8;
-  border-radius: 8px;
+.search-controls select {
+  height: 56px;
+  padding: 0 16px;
+  border: 2px solid #b8cdbc;
+  border-radius: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
 .search-controls input {
-  flex: 1;
-  min-width: 220px;
+  width: 100%;
 }
 
-.search-controls button {
-  background-color: #2f6b4f;
+.filter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+#resetButton {
+  width: 160px;
+  height: 56px;
+
+  background-color: #2f6f4f;
   color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+#resetButton:hover {
+  background-color: #25583e;
+}
+
+@media (max-width: 700px) {
+  .filter-row {
+    grid-template-columns: 1fr;
+  }
+
+  #resetButton {
+    width: 100%;
+  }
 }
 
 .plant-list {
@@ -184,19 +217,6 @@ button {
   line-height: 1.6;
 }
 
-.map-button {
-  background-color: #2f6f4f;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 14px;
-  cursor: pointer;
-}
-
-.map-button:hover {
-  background-color: #25583f;
-}
-
 #map {
   width: 100%;
   height: 520px;
@@ -205,19 +225,6 @@ button {
   border-radius: 12px;
 }
 
-.map-button {
-  background-color: #2f6f4f;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 14px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.map-button:hover {
-  background-color: #25583f;
-}
 .plant-image {
   width: 100%;
   max-width: 360px;
@@ -226,4 +233,45 @@ button {
   border-radius: 16px;
   display: block;
   margin: 0 auto 24px;
+}
+
+.button-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.map-button,
+.instagram-button {
+  width: 100%;
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2f6f4f;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  line-height: 1.3;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 10px 12px;
+  box-sizing: border-box;
+
+  appearance: none;
+}
+
+.map-button:hover,
+.instagram-button:hover {
+  background-color: #25583e;
 }

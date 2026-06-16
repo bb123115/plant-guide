@@ -356,5 +356,111 @@
 }
 ],
 "description": "別名アーススターとも呼ばれる植物です。葉の色や模様が美しく、根張りが弱く寒さに弱い点に注意が必要です。"
+},
+{
+ "id": 11,
+  "name": "アレカヤシ",
+  "price": "1,500円〜8,000円",
+  "priceLevel": "中",
+  "size": "中〜大",
+  "difficulty": "普通",
+  "light": "明るい日陰",
+  "watering": "土の表面が乾いたらたっぷり水をあげる",
+  "originRegion": "アフリカ",
+  "originText": "マダガスカル",
+  "image": "images/areca.png/areca.png",
+  "originLocations": [
+    {
+      "name": "マダガスカル",
+      "lat": -18.7669,
+      "lng": 46.8691,
+      "countryCode": "MDG"
+    }
+  ],
+  "description": "細くしなやかな葉が広がる、南国らしい雰囲気の観葉植物です。明るくさわやかな印象を部屋に取り入れたい人に向いています。"
+},
+{
+  "id": 12,
+  "name": "オーガスタ",
+  "price": "3,000円〜15,000円",
+  "priceLevel": "中",
+  "size": "中〜大",
+  "difficulty": "普通",
+  "light": "明るい日陰",
+  "watering": "土の表面が乾いたら水をあげる",
+  "originRegion": "アフリカ",
+  "originText": "南アフリカ",
+  "image": "images/augusta.png/augusta.png",
+  "originLocations": [
+    {
+      "name": "南アフリカ",
+      "lat": -30.5595,
+      "lng": 22.9375,
+      "countryCode": "ZAF"
+    }
+  ],
+  "description": "大きくつやのある葉が特徴で、部屋に置くと存在感が出る観葉植物です。広めの部屋やリビングをおしゃれに見せたい人に向いています。"
+},
+{
+  "id": 13,
+  "name": "アイビー",
+  "price": "300円〜2,000円",
+  "priceLevel": "安い",
+  "size": "小〜中",
+  "difficulty": "簡単",
+  "light": "明るい日陰",
+  "watering": "土の表面が乾いたら水をあげる",
+  "originRegion": "ヨーロッパ",
+  "originText": "ヨーロッパ、西アジア",
+  "image": "images/ivy.png/ivy.png",
+  "originLocations": [
+    {
+      "name": "イギリス",
+      "lat": 55.3781,
+      "lng": -3.436,
+      "countryCode": "GBR"
+    },
+    {
+      "name": "トルコ",
+      "lat": 38.9637,
+      "lng": 35.2433,
+      "countryCode": "TUR"
+    }
+  ],
+  "description": "つるが伸びて垂れ下がる姿が特徴の育てやすい観葉植物です。棚の上やハンギングで飾りたい人に向いています。"
+},
+{
+  "id": 14,
+  "name": "オリーブ",
+  "price": "1,500円〜10,000円",
+  "priceLevel": "中",
+  "size": "中〜大",
+  "difficulty": "普通",
+  "light": "日なた",
+  "watering": "土の表面が乾いたら水をあげる",
+  "originRegion": "地中海沿岸",
+  "originText": "地中海沿岸",
+  "image": "images/olive.png/olive.png",
+  "originLocations": [
+    {
+      "name": "イタリア",
+      "lat": 41.8719,
+      "lng": 12.5674,
+      "countryCode": "ITA"
+    },
+    {
+      "name": "ギリシャ",
+      "lat": 39.0742,
+      "lng": 21.8243,
+      "countryCode": "GRC"
+    },
+    {
+      "name": "スペイン",
+      "lat": 40.4637,
+      "lng": -3.7492,
+      "countryCode": "ESP"
+    }
+  ],
+  "description": "細長い銀緑色の葉が特徴で、ナチュラルで落ち着いた雰囲気を出せる植物です。日当たりのよい場所で育てたい人に向いています。"
 }
 ]

@@ -25,26 +25,28 @@
       <h2>観葉植物を探す</h2>
 
       <div class="search-controls">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="植物名で検索"
-        >
+       <input
+         type="text"
+         id="searchInput"
+         placeholder="植物名で検索"
+       >
 
-        <select id="difficultyFilter">
-          <option value="">育てやすさを選択</option>
-          <option value="簡単">簡単</option>
-          <option value="普通">普通</option>
-        </select>
+      <div class="filter-row">
+       <select id="difficultyFilter">
+        <option value="">育てやすさを選択</option>
+        <option value="簡単">簡単</option>
+        <option value="普通">普通</option>
+       </select>
 
-        <select id="priceFilter">
-          <option value="">価格帯を選択</option>
-          <option value="安い">安い</option>
-          <option value="中">中</option>
-        </select>
-
-        <button id="resetButton">リセット</button>
+       <select id="priceFilter">
+        <option value="">価格帯を選択</option>
+        <option value="安い">安い</option>
+        <option value="中">中</option>
+       </select>
       </div>
+
+      <button id="resetButton">リセット</button>
+     </div>
 
       <p id="resultCount"></p>
     </section>
