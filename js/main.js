@@ -112,12 +112,11 @@ function getInstagramUrl(plantName) {
   const keyword = `${plantName} 植物`;
 
   if (isMobileDevice()) {
-    // スマホ版：#パキラ植物 のようなハッシュタグページへ
-    const tag = `${plantName}植物`.replace(/\s+/g, "");
-    return `https://www.instagram.com/explore/tags/${encodeURIComponent(tag)}/`;
+    // スマホ版：GoogleでInstagram投稿を検索
+    return `https://www.google.com/search?q=${encodeURIComponent(keyword + " site:instagram.com")}`;
   }
 
-  // PC版：今まで通りのInstagram検索
+  // PC版：今まで通りInstagram検索
   return `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(keyword)}`;
 }
 
