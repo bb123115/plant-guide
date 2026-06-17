@@ -103,6 +103,24 @@ function showOriginsOnMap(plant) {
   }
 }
 
+//インスタ検索のスマホ、PC分岐
+function isMobileDevice() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+function getInstagramUrl(plantName) {
+  const keyword = `${plantName} 植物`;
+
+  if (isMobileDevice()) {
+    // スマホ版：#パキラ植物 のようなハッシュタグページへ
+    const tag = `${plantName}植物`.replace(/\s+/g, "");
+    return `https://www.instagram.com/explore/tags/${encodeURIComponent(tag)}/`;
+  }
+
+  // PC版：今まで通りのInstagram検索
+  return `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(keyword)}`;
+}
+
 // 植物一覧を表示
 function displayPlants(plantData) {
   plantList.innerHTML = "";
