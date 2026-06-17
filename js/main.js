@@ -138,9 +138,8 @@ function displayPlants(plantData) {
     const origin = plant.originText || plant.origin || "不明";
     const watering = plant.watering || plant.water || "不明";
     const priceLevel = plant.priceLevel || plant.priceCategory || "不明";
-    const instagramKeyword = `${plant.name}　植物`;
-    const instagramUrl = `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(instagramKeyword)}`;
-
+    const instagramUrl = getInstagramUrl(plant.name);
+    
     card.innerHTML = `
       <img src="${plant.image}" alt="${plant.name}" class="plant-image">
       <h3>${plant.name}</h3>
