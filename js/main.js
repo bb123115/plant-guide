@@ -109,15 +109,11 @@ function isMobileDevice() {
 }
 
 function getInstagramUrl(plantName) {
-  const keyword = `${plantName} 植物`;
+  const tag = `${plantName}植物`
+    .replace(/\s+/g, "")
+    .replace(/[()（）・･]/g, "");
 
-  if (isMobileDevice()) {
-    // スマホ版：GoogleでInstagram投稿を検索
-    return `https://www.google.com/search?q=${encodeURIComponent(keyword + " site:instagram.com")}`;
-  }
-
-  // PC版：今まで通りInstagram検索
-  return `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(keyword)}`;
+  return `https://www.instagram.com/explore/tags/${encodeURIComponent(tag)}/`;
 }
 
 // 植物一覧を表示
@@ -139,21 +135,42 @@ function displayPlants(plantData) {
     const watering = plant.watering || plant.water || "不明";
     const priceLevel = plant.priceLevel || plant.priceCategory || "不明";
     const instagramUrl = getInstagramUrl(plant.name);
-    
+    const climateHtml = plant.climate ? `
+     <div class="climate-info">
+      <h4>自生地の気候</h4>
+      <p><strong>気候：</strong>${plant.climate.type || "不明"}</p>
+      <p><strong>最高気温：</strong>${plant.climate.maxTemp || "不明"}</p>
+      <p><strong>最低気温：</strong>${plant.climate.minTemp || "不明"}</p>
+      <p><strong>湿度：</strong>${plant.climate.humidity || "不明"}</p>
+      <p><strong>雨季：</strong>${plant.climate.rainySeason || "不明"}</p>
+      <p><strong>乾季：</strong>${plant.climate.drySeason || "不明"}</p>
+      <p><strong>育て方の参考：</strong>${plant.climate.carePoint || "不明"}</p>
+     </div>
+    ` : "";
+    const triviaHtml = plant.trivia ? `
+     <div class="trivia-info">
+      <h4>ちょっとした雑学</h4>
+      <p><strong>${plant.trivia.title || "豆知識"}</strong></p>
+      <p>${plant.trivia.text || ""}</p>
+     </div>
+    ` : "";
+
     card.innerHTML = `
       <img src="${plant.image}" alt="${plant.name}" class="plant-image">
       <h3>${plant.name}</h3>
       <p><strong>価格：</strong>${plant.price || "不明"}</p>
       <p><strong>価格帯：</strong>${priceLevel}</p>
-      <p><strong>サイズ：</strong>${plant.size || "不明"}</p>
+      <p><strong>流通サイズ：</strong>${plant.size || "不明"}</p>
       <p><strong>難易度：</strong>${plant.difficulty || "不明"}</p>
       <p><strong>日当たり：</strong>${plant.light || "不明"}</p>
       <p><strong>水やり：</strong>${watering}</p>
       <p><strong>原産地：</strong>${origin}</p>
       <p>${plant.description || ""}</p>
+      ${climateHtml}
+      ${triviaHtml}
       <div class="button-area">
        <a href="${instagramUrl}" target="_blank" rel="noopener noreferrer" class="instagram-button">
-        Instagramで検索する
+        インスタ投稿を見る
        </a>
        
        <button class="map-button">原産地を地図で見る</button>
